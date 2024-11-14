@@ -1,0 +1,17 @@
+% 1. Title: Test Laptops example dataset
+
+
+@RELATION laptops
+
+@ATTRIBUTE weight	REAL
+@ATTRIBUTE price 	REAL
+@ATTRIBUTE cpu 	REAL
+@ATTRIBUTE name 	{lenovo,hp,macbook}
+
+@DATA
+3.1,0.9,1.1,lenovo
+2.1,1.9,1.1,lenovo
+2.1,1.9,2.1,lenovo
+%
+%
+%
