@@ -22,8 +22,7 @@ public class WekaUnsupervisedLearningClusteringExample {
 
             // 3.Create new model or load the existing one (if present)
             SimpleKMeans loadedModel;
-//            if(new File(LAPTOP_CLASSIFYING_MODEL_PATH).exists()) {
-            if(false) {
+            if(new File(LAPTOP_CLASSIFYING_MODEL_PATH).exists()) {
                 loadedModel = (SimpleKMeans) SerializationHelper.read(LAPTOP_CLASSIFYING_MODEL_PATH);
             } else {
                 // Set nu,ber of clusters and seeds.
@@ -43,7 +42,7 @@ public class WekaUnsupervisedLearningClusteringExample {
                 System.out.println("Cluster " + i + ": " + centroids.instance(i));
             }
 
-            // 7. Save model into the file
+            // 6. Save model into the file
             SerializationHelper.write(LAPTOP_CLASSIFYING_MODEL_PATH, loadedModel);
             System.out.println("\nModel was saved!");
 
@@ -51,7 +50,7 @@ public class WekaUnsupervisedLearningClusteringExample {
             ConverterUtils.DataSource newData = new ConverterUtils.DataSource("datasets/test_laptops.arff");
             Instances testDataset = newData.getDataSet();
 
-            // 5. Matching with results:
+            // 7. Matching with results:
             System.out.println("\nCluster matching:");
             for (int i = 0; i < testDataset.numInstances(); i++) {
                 int cluster = loadedModel.clusterInstance(testDataset.instance(i));
