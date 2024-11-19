@@ -1,0 +1,10 @@
+/workspaces/aiml-samples/src/main/java/autoencoder/AutoencoderExample.java
+/workspaces/aiml-samples/src/main/java/cnn/CNNExample.java
+/workspaces/aiml-samples/src/main/java/gan/GANExample.java
+/workspaces/aiml-samples/src/main/java/linear_regression/LinearRegression.java
+/workspaces/aiml-samples/src/main/java/reinforcement_learning/QLearningModel.java
+/workspaces/aiml-samples/src/main/java/rnn/RNNExample.java
+/workspaces/aiml-samples/src/main/java/simple_neural_network/SimpleNeuralNetwork.java
+/workspaces/aiml-samples/src/main/java/supervised_learning/WekaSupervisedLearningExample.java
+/workspaces/aiml-samples/src/main/java/unsupervised_learning/WekaUnsupervisedLearningClusteringExample.java
+/workspaces/aiml-samples/src/main/java/unsupervised_learning/WekaUnsupervisedLearningDimensionalityReductionExample.java
